@@ -22,12 +22,14 @@
 
     <script>
 
-        const heading1 = React.createElement("h1",{},"Hello from React");
-
+        const heading1 = React.createElement("h1",{id:"title1"},"Hello from React");
+        console.log(heading1);
+        
+        const heading2 = React.createElement("h1",{id:"title2"},"Again, Hello from React");
 
         const root = ReactDOM.createRoot(document.getElementById("root"));
 
-        root.render(heading1)
+        root.render([heading1,heading2])
 
     </script>
 </body>
